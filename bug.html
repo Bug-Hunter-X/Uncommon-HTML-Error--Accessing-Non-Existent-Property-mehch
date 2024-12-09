@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Attempting to access a non-existent property of an undefined variable
+    let x = undefined; //Variable x is undefined 
+    let y = x.length; //Error: Cannot read properties of undefined (reading 'length')
+    document.getElementById("myDiv").innerHTML = y;
+  </script>
+</body>
+</html>
