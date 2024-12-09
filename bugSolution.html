@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //Check if x is defined before accessing its properties 
+    let x = undefined;
+    let y;
+    if (x !== undefined && x.hasOwnProperty('length')) {
+        y = x.length; 
+    } else {
+        y = 0; //Default value if x is undefined or doesn't have length
+    }
+    document.getElementById("myDiv").innerHTML = y; 
+  </script>
+</body>
+</html>
